@@ -1,0 +1,134 @@
+ html{scroll-behavior:smooth; }
+ *{padding: 0; margin: 0;box-sizing: border-box;}
+ body{background: whitesmoke; font-family: 'poppins', sans-serif;}
+ header{
+ 	width: 100%;
+ 	min-height:100vh;
+ 	display: flex;
+ 	align-items:center;
+ 	justify-content: start;
+ 	font-size: 30pt;
+
+ }
+ header img{
+ 	width: 10rem;
+ 	height: auto;
+ 	min-height: 50vh;
+ 	width: 25%;
+ 	border-radius:100%;
+ }
+ .container{
+ 	width: 100%;
+ 	min-height: 150vh;
+ 	display:grid;
+ 	grid-template-columns: 1fr 1fr 1fr 1fr;
+ 	grid-template-rows: 1fr 1fr 0.8fr 0.2fr;
+ 	gap: 1rem;
+ 	grid-template-areas:"profile profile skills skills"
+ 	                    "edu edu edu lang"
+                        "contact exp exp exp"
+                        "footer footer footer footer";
+                        padding:2rem;
+
+ }
+     .profile{
+     	background: grey;
+     	color: white;
+     	padding: 2rem;
+     	grid-area: profile;
+     }
+     .skills{
+     	background:rosybrown;
+     	color: whitesmoke;
+     	padding: 2rem;
+     	grid-area: skills;
+
+     }
+     .edu{
+     	background: gold;
+     	color: black;
+     	padding: 2rem;
+     	grid-area: edu;
+
+     }
+     .lang{
+     	background:gray;
+     	color: whitesmoke;
+     	padding: 2rem;
+     	grid-area: lang;
+
+     }
+     .contact{
+     	background: seagreen;
+     	color: whitesmoke;
+     	padding: 2rem;
+     	grid-area: contact;
+     }
+     .exp{
+     	background: navajowhite;
+     	color: navy;
+     	padding: 2rem;
+     	grid-area: exp;
+
+     }
+     .footer{
+     	color: whitesmoke;
+     	background: gray;
+     	padding: 2rem;
+     	grid-area: footer;
+     }
+h2{
+	margin-bottom: 1rem;
+}
+.skills label{
+	width: 100%;
+	padding: 0.5rem 1rem;
+}
+.edu h2{
+	letter-spacing: 0.1rem;
+}
+.edu p{
+	padding: 0.3rem 1rem;
+	text-align: justify;
+	line-height: 2.2m;
+	font-size: 3vh;
+}
+.lang ul{
+	margin: 1rem 0;
+	padding: 0.3rem 1rem;
+}
+.lang ul li{
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+.exp p{
+	padding: 0.5rem 1rem;
+	margin: 1rem 0;
+	line-height: 2.2m;
+	text-align: justify;
+
+}
+footer i{
+	background: whitesmoke;
+	color: black;
+	padding: 0.5rem;
+	margin: 1rem 0.2rem;
+	border-radius: 50%;
+	transition: 0.4s;
+
+}
+footer i:hover{
+	background: greenyellow;
+	color: mistyroses;
+	cursor: pointer;
+}
+footer {
+	text-align: center;
+}
+h2{
+	color: navy;
+
+}
+center p{
+	color: darkgreen;
+}
